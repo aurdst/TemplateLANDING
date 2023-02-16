@@ -1,9 +1,8 @@
 <template>
     <v-container class="appbar">
         <v-app-bar class="appbar pt-5">
-            <div>
-
-                <v-img src="@/assets/img/logoRandomFit.png"/>
+            <div style="text-align: left; width: 150px;">
+                <v-img src="@/assets/img/logoRandomFit.png" class="pl-5"/>
             </div>
             <template v-slot:append>
                 <v-btn icon="mdi-magnify" class="iconbtn"></v-btn>

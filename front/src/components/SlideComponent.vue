@@ -14,12 +14,7 @@
         background-image: url("../assets/pexels-pixabay-417273.jpg");
         background-size: cover;
         height: auto;
-        height: 100vh;
-    }
-
-    p{
-        color: white;
-        font-weight: 900;
+        height: 102vh;
     }
 </style>
 
