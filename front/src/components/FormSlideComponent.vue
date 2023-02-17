@@ -5,16 +5,17 @@
         <form @submit.prevent="submit">
           <v-text-field
             v-model="name.value.value"
+            class="field_label"
             :counter="10"
             :error-messages="name.errorMessage.value"
-            label="Name"
+            label="Nom"
           ></v-text-field>
       
           <v-text-field
             v-model="phone.value.value"
             :counter="7"
             :error-messages="phone.errorMessage.value"
-            label="Phone Number"
+            label="Téléphone"
           ></v-text-field>
       
           <v-text-field
@@ -27,7 +28,7 @@
             v-model="select.value.value"
             :items="items"
             :error-messages="select.errorMessage.value"
-            label="Select"
+            label="Projet"
           ></v-select>
       
           <v-checkbox
@@ -39,13 +40,13 @@
           ></v-checkbox>
       
           <v-btn
-            class="me-4"
+            class="me-4 btn"
             type="submit"
           >
             envoyer
           </v-btn>
       
-          <v-btn @click="handleReset">
+          <v-btn @click="handleReset" class="btn_delete">
             effacer
           </v-btn>
         </form>
@@ -53,14 +54,47 @@
   </template>
 
 
-<style>
+<style scoped>
 .form{
     padding: 55px;
 }
+  /* Desktop */
+  @media screen and (min-width:790px){
+    .v-label.v-label--clickable {
+    font-size: 1vw!important;
+    }
 
-.v-label.v-label--clickable {
-    font-size: .8vw;
+    .form{
+    width: 70%!important;
+    display: block;
+    margin: auto;
+  }
+  }
+  .v-label.v-label--clickable {
+    font-size: 3.3vw;
+    }
+  .form{
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .field_label{
+    background: white!important;
+  }
+  .btn{
+    border-radius: 0px;
+    color: white;
+    background: #009688;
+    font-weight: 300;
+  }
+  .btn_delete{
+    border-radius: 0px;
+    background: #232323;
+    color: white;
+    font-weight: 300;
 }
+
 </style>
 
 <script>
@@ -105,10 +139,10 @@
       const checkbox = useField('checkbox')
 
       const items = ref([
-        'Item 1',
-        'Item 2',
-        'Item 3',
-        'Item 4',
+        'Construction',
+        'Rénovation',
+        'Destruction',
+        'Conseils',
       ])
 
       const submit = handleSubmit(values => {

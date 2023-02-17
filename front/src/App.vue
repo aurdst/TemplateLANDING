@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main class="main">
       <router-view/>
     </v-main>
   </v-app>
@@ -17,9 +17,12 @@ export default {
 }
 </script>
 
-<style>
+<style >
 div.v-container{
   padding: 0;
   max-width: 100%!important;
+}
+.main{
+  overflow-x: hidden;
 }
 </style>

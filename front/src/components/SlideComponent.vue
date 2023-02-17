@@ -10,11 +10,11 @@
 
 <style scoped>
     .v-row{
-        margin-top: -8vh ;
+        margin-top: -8vh;
         background-image: url("../assets/pexels-pixabay-417273.jpg");
         background-size: cover;
-        height: auto;
-        height: 102vh;
+        height: 100vh;
+        width: auto;
     }
 </style>
 

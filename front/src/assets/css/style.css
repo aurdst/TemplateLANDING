@@ -1,3 +1,12 @@
 .v-btn.v-theme--light.v-btn--density-defaultv-btn--size-default.v-btn--variant-tonal.ml-10{
     border-radius: 0px!important;
 }
+
+footer.v-footer.v-theme--light.d-flex.flex-column{
+    padding: 0;
+}
+
+div.v-field__field{
+    background-color: white!important;
+    border-bottom: solid 2px #009688!important;
+}

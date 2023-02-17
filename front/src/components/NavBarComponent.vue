@@ -5,9 +5,11 @@
                 <v-img src="@/assets/img/logoRandomFit.png" class="pl-5"/>
             </div>
             <template v-slot:append>
-                <v-btn icon="mdi-magnify" class="iconbtn"></v-btn>
+                <v-btn icon="mdi-menu" class="iconbtn" @click="menu = !menu"></v-btn>
             </template>
         </v-app-bar>
+
+        <MenuComponent v-if="menu"/>
     </v-container>
 </template>
 
@@ -28,7 +30,16 @@ div.v-toolbar__content{
 </style>
 
 <script>
+import MenuComponent from '@/components/MenuComponent.vue'
     export default {
-        name: 'NavBarComponent'
+        name: 'NavBarComponent',
+
+        components: {
+            MenuComponent,
+        },
+
+        data: () => ({
+            menu: false,
+        }),
     }
 </script>
