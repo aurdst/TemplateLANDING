@@ -1,7 +1,7 @@
 <template>
     <v-container class="container">
         <div class="paragraph">
-            <h1>Title</h1>
+            <h1 class="text-center">Title</h1>
             <br>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel placerat enim. Sed id odio porta, venenatis sem non, dignissim nibh. Sed elementum nunc purus, sed maximus urna pulvinar ut. Nullam semper arcu sed ipsum viverra rhoncus. Ut vel mattis sapien, ac lobortis ligula. Curabitur iaculis ullamcorper sagittis. Aenean ornare vulputate cursus. Nullam vitae ex maximus, pretium elit quis, maximus enim. Morbi ac neque vitae dolor posuere fermentum vitae ac lacus. Ut varius viverra tortor, et consequat tellus luctus ut. Cras pretium nulla vel nulla interdum, sed vulputate lorem mollis. 
