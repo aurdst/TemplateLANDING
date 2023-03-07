@@ -14,7 +14,11 @@
                     <br>
                     <br>
                     <br>
-                    <li>A propos</li>
+                    <span>
+                        <router-link to="/3d">
+                            <li class="btn_menu">3D</li>
+                        </router-link>
+                    </span>
                     <li>Nos Services</li>
                     <li>Contact</li>
                     <li>Autre</li>
